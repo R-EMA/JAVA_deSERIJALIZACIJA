@@ -1,0 +1,34 @@
+package serije;
+
+/**
+ * 
+ * @author emma
+ * 
+ * Serijalizacija i deserijalizacija
+ * 
+ *
+ */
+
+public class MainDS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+/*
+ * Serijalizacija je proces upisivanja stanja objekta u tok bajtova. 
+ * Uglavnom se koristi za prenošenje stanja objekta u mreži.
+ * 
+ * Deserijalizacija je proces rekonstrukcije objekta iz serijalizovanog stanja. 
+ * To je obrnuta operacija serijalizacije.
+ * 
+ * Interfejs Serializable je interfejs markera. 
+ * Kada se koristi interfejs koji može da se serializuje, klasa se podrazumevano 
+ * automatski serijalizuje. 
+ * Mogu da se prepišu dva metoda vriteObject() i readObject()
+ *  a u cilju kontrolisanja složenijeg procesa serijalizacije objekata. 
+ * 
+*/

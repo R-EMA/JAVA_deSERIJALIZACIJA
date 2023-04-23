@@ -1,0 +1,10 @@
+package serije;
+
+public class MainDS {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

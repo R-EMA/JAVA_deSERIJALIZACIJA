@@ -1,0 +1,53 @@
+package serije2;
+
+import java.io.*;
+
+public class MainProvera {
+
+	public static void main(String[] args) {
+		// da vidim da li sam shvatila xD
+		
+		Rect r1 = new Rect(3,2);		
+		//provera šta je kreirano
+		System.out.println(r1.toString());
+		
+		String cia = "fbi.ser";
+		
+		// formiranje "dosijea"
+		try {
+			FileOutputStream fos = new FileOutputStream(cia);
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			
+			oos.writeObject(r1);
+			
+			fos.close();
+			oos.close();
+		}
+		catch(IOException ie) {
+			System.out.println("Greška! " + ie.getMessage());
+		}
+		
+		// čitanje "dosijea"	
+		Rect r2 = null;
+		try {
+			FileInputStream fis = new FileInputStream(cia);
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			
+			r2 = (Rect) ois.readObject();
+			System.out.println(r2.toString());
+			
+			fis.close();
+			ois.close();
+			
+		}
+		catch(IOException ie) {
+			System.out.println("Greška! " + ie.getMessage());
+		} 
+		catch (ClassNotFoundException e) {	
+			System.out.println("Greška! " + e.getMessage());
+			e.printStackTrace();
+		}
+
+	}
+
+}

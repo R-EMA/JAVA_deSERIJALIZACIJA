@@ -1,0 +1,32 @@
+package serije2;
+
+import java.io.Serializable;
+
+public class Rect implements Serializable {
+	
+	private static final long serialVersionUID = 120001222312224L;
+	
+	private int a;
+	private int b;
+	
+	public Rect(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+	
+	public int povrsina() {
+		return a*b;
+	}
+	
+	public int obim() {
+		return 2*(a+b);
+	}
+
+	@Override
+	public String toString() {
+		return "Rect [" + a + "," + b + "]: p=" + povrsina() + " o=" + obim();
+	}
+	
+	
+
+}

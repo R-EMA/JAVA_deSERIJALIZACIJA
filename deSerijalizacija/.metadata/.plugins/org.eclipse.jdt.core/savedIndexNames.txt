@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+/home/emma/eclipse-workspace/aaaStrucna_praksa/deSerijalizacija/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2510909563.index
+519306738.index
